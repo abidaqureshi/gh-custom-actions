@@ -5,6 +5,9 @@ inputs:
     description: 'Choose whether to do dep caching or not'
     required: false
     defaut: 'true'
+outputs:
+  used-cache:
+    description: 'Whether the cache was used or not'
 runs:
   using: 'composite'
   steps:
