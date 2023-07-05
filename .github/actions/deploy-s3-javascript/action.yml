@@ -11,6 +11,6 @@ inputs:
   dist-folder:
     description: 'The folder containing the deployable files'
     required: true  
-  runs:
-    using: 'node16'
-    main: 'main.js'
+runs:
+  using: 'node16'
+  main: 'main.js'
