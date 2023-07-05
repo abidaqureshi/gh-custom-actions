@@ -1,5 +1,16 @@
 name: 'Deploy to AWS S3'
 description: 'using javascript action to deploy to AWS S3'
+inputs:
+  bucket:
+    descrption: 'S3 bucket name is required'
+    required: true
+  bucket-region:
+    description: 'S3 bucket region is expired'
+    required: false
+    default: 'us-east-1'
+  dist-folder:
+    description: 'The folder containing the deployable files'
+    required: true  
   runs:
     using: 'node16'
     main: 'main.js'
